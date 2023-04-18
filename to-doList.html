@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" initial-scale="1">
+  <title>To-Do List</title>
+  <link href="to-doList.css" rel="stylesheet" />
+</head>
+<body>
+    <h2>To-Do List</h2>
+  <div id="myDIV" class="header">
+    <input type="text" id="newItem" placeholder="Add item to list">
+    <span onclick="newElement()" class="addBtn">+</span>
+  </div>
+  <div id="categories">
+    <input type="date" id="date">
+    <label id="dayLabel">Day:</label>
+    <select name="day" id="day">
+      <option value="Monday">Monday</option>
+      <option value="Tuesday">Tuesday</option>
+      <option value="Wednesday">Wednesday</option>
+      <option value="Thursday">Thursday</option>
+      <option value="Friday">Friday</option>
+    </select>
+    <div id="checkbox">
+      <label id = "label1">
+        <input type="checkbox" name="priority" value="1" id="priority" />Prioirity
+      </label>
+      <label id = "label2">
+        <input type="checkbox" name="work" value="2" id="work" />Work
+      </label>
+      <label id = "label3">
+        <input type="checkbox" name="home" value="3" id="home" />Home
+      </label>
+      <label id = "label4">
+        <input type="checkbox" name="activity" value="4" id="activity" />Activity
+      </label>
+    </div>
+  </div>
+
+  <div class="list" id="mon">
+    <h3 class="head">Monday</h3>
+    <ul id="monday">
+    </ul>
+  </div>
+  <div class="list" id="tues">
+    <h3 class="head">Tuesday</h3>
+    <ul id="tuesday">
+    </ul>
+  </div>
+  <div class="list" id="wed">
+    <h3 class="head">Wednesday</h3>
+    <ul id="wednesday">
+    </ul>
+  </div>
+  <div class="list" id="thurs">
+    <h3 class="head">Thursday</h3>
+    <ul id="thursday">
+    </ul>
+  </div>
+  <div class="list" id="fri">
+    <h3 class="head">Friday</h3>
+    <ul id="friday">
+    </ul>
+  </div>
+
+  <script src="to-doList.js"></script>
+</body>
+</html>
